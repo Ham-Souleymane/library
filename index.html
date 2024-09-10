@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <main class="table">
+        <section class="table-header">
+            <h1>Library</h1>
+        </section>
+        <section class="table-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Title
+                        </th>
+                        <th>
+                            Aurthor
+                        </th>
+                        <th>
+                            Pages
+                        </th>
+                        <th>
+                            Read
+                        </th>
+                        <th>
+                            Remove
+                        </th>
+                        
+                    </tr>
+                </thead>
+              <tbody id="libraryTableBody">
+                
+              </tbody>
+            </table>
+           
+        </section> 
+        <button  class="add_button">+</button>
+    </main>
+    <dialog class="modle" id="modle" > <form action="post">
+        <label for="Title">Title:</label>
+        <input type="text" id="Title" >
+        <label for="Aurthor">Aurthor:</label>
+        <input type="text" id="Aurthor" >
+        <label for="Pages">Pages:</label>
+        <input type="number" id="Pages" >
+        <div class="Read-ch">
+        <label for="Read">did you Read it</label>
+        <input type="checkbox" name="Read" id="Read"></div>
+        <button type="submit" class="submit-btn" onclick="addBookToLibrary()">Submit</button>
+      </form>
+
+</p></dialog>
+    <script src="script.js"></script>
+</body>
+</html>
